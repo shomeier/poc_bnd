@@ -8,6 +8,6 @@ public class ExampleComponent implements Greeting
 {
 	public String sayHello(String name)
 	{
-		return "Hello " + name;
+		return "Bonjour " + name;
 	}
 }
