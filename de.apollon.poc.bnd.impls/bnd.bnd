@@ -1,0 +1,9 @@
+-buildpath: \
+	osgi.core,\
+	osgi.cmpn,\
+	biz.aQute.bnd.annotation,\
+	junit__junit;version=4.12,\
+	de.apollon.poc.bnd.api;version=latest,\
+	org.apache.felix.gogo.runtime
+-sub: *.bnd
+Test-Cases: de.apollon.poc.bnd.impls.ExampleComponentTest

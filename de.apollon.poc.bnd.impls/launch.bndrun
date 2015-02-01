@@ -1,0 +1,14 @@
+-runfw: org.eclipse.osgi;version='[3.10.1.v20140909-1633,3.10.1.v20140909-1633]'
+-runee: JavaSE-1.8
+-runsystemcapabilities: ${native_capability}
+
+-resolve.effective: active;skip:="osgi.service"
+
+-runbundles: \
+	org.apache.felix.gogo.command;version='[0.14.0,0.14.1)',\
+	org.apache.felix.gogo.runtime;version='[0.12.1,0.12.2)',\
+	org.apache.felix.gogo.shell;version='[0.10.0,0.10.1)'
+
+-runrequires:\
+	osgi.identity;filter:='(osgi.identity=org.apache.felix.gogo.shell)',\
+	osgi.identity;filter:='(osgi.identity=org.apache.felix.gogo.command)'

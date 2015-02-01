@@ -1,0 +1,3 @@
+Private-Package: de.apollon.poc.bnd.command
+Service-Component: *
+Bundle-Version: 1.0.0.${tstamp}
