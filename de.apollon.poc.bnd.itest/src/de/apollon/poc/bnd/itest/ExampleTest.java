@@ -14,7 +14,7 @@ public class ExampleTest extends TestCase
 
 	public void testExample() throws Exception
 	{
-		ServiceReference<?> serviceReference = context.getServiceReference(Greeting.class.getName());
+		ServiceReference serviceReference = context.getServiceReference(Greeting.class.getName());
 		Greeting service = (Greeting) context.getService(serviceReference);
 
 		service.sayHello("teeeeest");
